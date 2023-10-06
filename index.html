@@ -47,15 +47,15 @@
 					</li>
 				</ul>
 				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
+					<input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button id="submit" class="btn btn-outline-success" type="submit">Search</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 
 	<div class="container">
-		<h1 class="my-4 text-center">Weather for Sukkur</h1>
+		<h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
 		<main>
 			<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 				<div class="col">
@@ -103,10 +103,10 @@
 							<h1 class="card-title pricing-card-title">$29<small
 									class="text-body-secondary fw-light">/mo</small></h1>
 							<ul class="list-unstyled mt-3 mb-4">
-								<li>30 users included</li>
-								<li>15 GB of storage</li>
-								<li>Phone and email support</li>
-								<li>Help center access</li>
+								<li>Wind Degree is <span id="wind_degrees"></span></li>
+								<li>Wind Speed is <span id="wind_speed"></span></li>
+								<li>Sunrise is <span id="sunrise"></span></li>
+								<li>Sunset is <span id="sunset"></span></li>
 							</ul>
 							<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
 						</div>
