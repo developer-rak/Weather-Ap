@@ -1,4 +1,4 @@
-const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Islamabad';
+const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=';
 const options = {
     method: 'GET',
     headers: {
@@ -9,7 +9,7 @@ const options = {
 
 const getWeather = (city) => {
     cityName.innerHTML = city
-    fetch(url, options)
+    fetch(url + city, options)
         .then(response => response.json())
         .then(response => {
 
