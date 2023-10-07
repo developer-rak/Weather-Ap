@@ -20,7 +20,7 @@ const getWeather = (city) => {
             temp2.innerHTML = response.temp
             feels_like.innerHTML = response.feels_like
             humidity.innerHTML = response.humidity
-
+            humidity2.innerHTML = response.humidity
             min_temp.innerHTML = response.min_temp
             max_temp.innerHTML = response.max_temp
             wind_speed.innerHTML = response.wind_speed
